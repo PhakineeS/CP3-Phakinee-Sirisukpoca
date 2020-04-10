@@ -1,0 +1,10 @@
+founEng = float(input("Foundation English : "))
+genBus = float(input("General Business : "))
+intro = float(input("Introduction to Computer Systems : "))
+comPro = float(input("Computer Programming : "))
+
+print("---Your Score ---")
+print('Foundation English : ',founEng)
+print('General Business : ',genBus)
+print('Introduction to Computer Systems : ',intro)
+print('Computer Programming :',comPro)
