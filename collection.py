@@ -7,7 +7,7 @@ def small(a):
             res+=a[i]
     return res
 
-menuDic = {}
+menuDic = []
 while True:
     menu = input('Enter Menu : ')
     menu = small(menu)
@@ -15,12 +15,14 @@ while True:
         break
     else:
         price = input('Enter Price : ')
-        menuDic[menu] = price
+        menuDic.append([menu,price])
 
 summ = 0
 print('---------My-Food----------')
-for i in menuDic.keys():
-    print(i,menuDic[i])
-    summ+=int(menuDic[i])
+for i in range(len(menuDic)):
+    print(menuDic[i][0],end=' ')
+    print(menuDic[i][1])
+    summ+=int(menuDic[i][1])
+print()
 print('Total : %d'%(summ))
 print('---------ThankYou---------')
